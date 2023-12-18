@@ -1,55 +1,55 @@
 # Express
 
 ## Book Record Management System.(project)
->> server
-   >> Storing Book Data.
-   >> User Registration.
-   >> Subscription.
+0.  server
+   1. Storing Book Data.
+   2. User Registration.
+   3. Subscription.
 
 ## Routes and  Endpoints.
 
 ## /users
-GET: Get all list of users.
-POST: Create a new user.
+1. GET: Get all list of users.
+2. POST: Create a new user.
 
 ## /users/{id}
-GET: Get a user by their ID.
-PUT: Update a user by ID.
-DELETE: Delete a user By ID.(check he/she still have an issued book) && (is there any fine to be collected from him/her)
+1. GET: Get a user by their ID.
+2. PUT: Update a user by ID.
+3. DELETE: Delete a user By ID.(check he/she still have an issued book) && (is there any fine to be collected from him/her)
 
 # Subscription Types:
->> 3 months.(Basic Subscription)
->> 6 months.(Standard Subscription)
->> 12 months.(Premium Subscription)
+1. 3 months.(Basic Subscription)
+2. 6 months.(Standard Subscription)
+3. 12 months.(Premium Subscription)
 
 ## /users/subscription-details{id}.
 GET: Get users subscription details.
- >> Data of Subscriptions.
- >> Valid Till.
- >> Fine if any.
+ 1.  Data of Subscriptions.
+ 2.  Valid Till.
+ 3.  Fine if any.
 
 ## Book details.
 
 ## books/
-GET: Get all books.
-POST: Create/Add a new Book to a system.
+1. GET: Get all books.
+2. POST: Create/Add a new Book to a system.
 
 
 ## /books/{id}
-GET: Get a book by ID.
-PUT: Update a by its ID.
+1. GET: Get a book by ID.
+2. PUT: Update a by its ID.
 
 ## /books/issued.
-GET: Get all issued books.
+1. GET: Get all issued books.
 
 ## /books/issued/withFine
-GET: Get all issued book with fine.
+1. GET: Get all issued book with fine.
 
 ## Fine Calculation.
-  >> If the user has an issued book and issued book is to be returned at 1/01/2024.
+  1. >> If the user has an issued book and issued book is to be returned at 1/01/2024.
   If he missed the date of renewal/return, then he needs to pay a penalty of Rs. 100/-
 
-  >> If the user has an issued book and issued book is to be returned at 1/01/2024.
+  2. >> If the user has an issued book and issued book is to be returned at 1/01/2024.
   If he missed the date of renewal/return and his subscription also expires, then he needs to pay a penalty of Rs. 200/-
 
 
@@ -59,4 +59,4 @@ GET: Get all issued book with fine.
 3. npm i nodemon--save-dev
 
 ## Run Command
-npm run dev
+1. npm run dev
