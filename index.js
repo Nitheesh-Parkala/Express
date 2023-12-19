@@ -2,7 +2,7 @@ const express = require("express");
 
 // importing routes
 const userRouter = require("./routes/users");
-// const booksRouter = require("./routes/books");
+const booksRouter = require("./routes/books");
 
 const app = express();
 
@@ -23,7 +23,7 @@ app.get("/", (req,res)=>{
  * especially as your application grows and you have multiple endpoints to manage.
  */
 app.use("/users",userRouter);
-// app.use("/books", booksRouter);
+app.use("/books", booksRouter);
 
 
 app.all("*", (req,res)=>{

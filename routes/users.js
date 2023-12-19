@@ -72,6 +72,33 @@ router.post("/", (req, res)=>{
         data: users
     })
 })
+//we can use this logic also
+// router.post("/", (req, res) => {
+//     const { data } = req.body;
+
+//     if (!data) {
+//         return res.status(404).json({
+//             success: false,
+//             message: "No Data provided"
+//         });
+//     }
+
+//     const user = users.find((each) => each.id === data.id);
+
+//     if (user) {
+//         return res.status(404).json({
+//             success: false,
+//             message: "User already exists with the given Id"
+//         });
+//     }
+
+//     const allUsers = [...users, data];
+
+//     res.status(201).json({
+//         success: true,
+//         data: allUsers
+//     });
+// });
 /**
  * Route: /users/:id
  * Method: PUT
@@ -130,4 +157,4 @@ router.delete("/:id",(req,res)=>{
     })
 })
 
-module.exports = router;  // entire router back
+module.exports = router;  
