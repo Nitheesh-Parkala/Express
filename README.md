@@ -1,6 +1,5 @@
 # Book Record Management
 
-## Book Record Management System.(project)
 >> server
    1. Storing Book Data.
    2. User Registration.
